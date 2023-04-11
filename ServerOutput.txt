@@ -1,0 +1,1089 @@
+Server started
+Transaction 0 initialized
+Transaction 1 initialized
+Transaction 2 initialized
+Transaction 3 initialized
+Transaction 4 initialized
+Transaction 5 initialized
+Transaction 6 initialized
+Transaction 7 initialized
+Transaction 8 initialized
+Transaction 9 initialized
+Transaction 10 initialized
+Transaction 11 initialized
+Transaction 12 initialized
+Transaction 13 initialized
+Transaction 14 initialized
+Transaction 15 initialized
+Transaction 16 initialized
+Transaction 17 initialized
+Transaction 18 initialized
+Transaction 19 initialized
+Transaction 7: Reading withdraw Account 1 with the balance: 10
+Transaction 4: Reading withdraw Account 0 with the balance: 10
+Transaction 17: Reading withdraw Account 2 with the balance: 10
+Transaction 10: Reading withdraw Account 5 with the balance: 10
+Transaction 10: Reading deposit Account 1 with the balance: 10
+Transaction 17: Reading deposit Account 8 with the balance: 10
+Transaction 0: Reading withdraw Account 6 with the balance: 10
+Transaction 8: Reading withdraw Account 1 with the balance: 10
+Transaction 4: Reading deposit Account 7 with the balance: 10
+Transaction 13: Reading withdraw Account 9 with the balance: 10
+Transaction 14: Reading withdraw Account 4 with the balance: 10
+Transaction 14: Reading deposit Account 5 with the balance: 6
+Transaction 12: Reading withdraw Account 0 with the balance: 10
+Transaction 11: Reading withdraw Account 0 with the balance: 10
+Transaction 9: Reading withdraw Account 9 with the balance: 10
+Transaction 19: Reading withdraw Account 1 with the balance: 10
+Transaction 16: Reading withdraw Account 7 with the balance: 10
+Transaction 5: Reading withdraw Account 8 with the balance: 10
+Transaction 3: Reading withdraw Account 9 with the balance: 10
+Transaction 15: Reading withdraw Account 7 with the balance: 10
+Transaction 7: Reading deposit Account 6 with the balance: 10
+Transaction 6: Reading withdraw Account 6 with the balance: 10
+Transaction 6: Reading deposit Account 4 with the balance: 10
+Transaction 1: Reading withdraw Account 8 with the balance: 10
+Transaction 1: Reading deposit Account 0 with the balance: 7
+Transaction 18: Reading withdraw Account 4 with the balance: 10
+Transaction 2: Reading withdraw Account 6 with the balance: 10
+Transaction 18: Reading deposit Account 2 with the balance: 8
+Conflict found between transaction 14 and 10
+Transaction 15: Reading deposit Account 5 with the balance: 6
+Transaction 3: Reading deposit Account 1 with the balance: 14
+Transaction 5: Reading deposit Account 6 with the balance: 10
+Transaction 16: Reading deposit Account 3 with the balance: 10
+Transaction 19: Reading deposit Account 6 with the balance: 10
+Transaction 9: Reading deposit Account 5 with the balance: 6
+Transaction 11: Reading deposit Account 9 with the balance: 10
+Transaction 12: Reading deposit Account 4 with the balance: 10
+Transaction 13: Reading deposit Account 2 with the balance: 8
+Transaction 4: writing withdraw Account 0 with the new balance: 7
+Transaction 8: Reading deposit Account 9 with the balance: 10
+Transaction 0: Reading deposit Account 7 with the balance: 10
+Transaction 17: writing withdraw Account 2 with the new balance: 8
+Transaction 10: writing withdraw Account 5 with the new balance: 6
+Transaction 17: writing deposit Account 8 with the new balance: 12
+Transaction 4: writing deposit Account 7 with the new balance: 13
+Aborting Transaction 14
+Conflict found between transaction 18 and 17
+Aborting Transaction 18
+Transaction 2: Reading deposit Account 8 with the balance: 12
+Conflict found between transaction 1 and 4
+Transaction Started 4, Ended 22
+Transaction Started 17, Ended 21
+Transaction 10: writing deposit Account 1 with the new balance: 14
+Transaction Started 10, Ended 20
+Conflict found between transaction 1 and 17
+Aborting Transaction 1
+Conflict found between transaction 7 and 6
+Transaction 6: writing withdraw Account 6 with the new balance: 6
+Conflict found between transaction 7 and 10
+Transaction 24 initialized
+Conflict found between transaction 2 and 6
+Aborting Transaction 7
+Transaction 6: writing deposit Account 4 with the new balance: 14
+Conflict found between transaction 2 and 17
+Aborting Transaction 2
+Transaction 24: Reading withdraw Account 4 with the balance: 14
+Transaction 25 initialized
+Transaction 24: Reading deposit Account 5 with the balance: 6
+Conflict found between transaction 0 and 4
+Transaction Started 6, Ended 23
+Conflict found between transaction 0 and 6
+Transaction 25: Reading withdraw Account 4 with the balance: 14
+Transaction 26 initialized
+Transaction 25: Reading deposit Account 2 with the balance: 8
+Conflict found between transaction 8 and 10
+Aborting Transaction 0
+Conflict found between transaction 13 and 17
+Aborting Transaction 13
+Aborting Transaction 8
+Transaction 26: Reading withdraw Account 1 with the balance: 14
+Transaction 27 initialized
+Transaction 26: Reading deposit Account 6 with the balance: 6
+Conflict found between transaction 12 and 4
+Transaction 27: Reading withdraw Account 8 with the balance: 12
+Transaction 28 initialized
+Transaction 27: Reading deposit Account 0 with the balance: 7
+Conflict found between transaction 12 and 6
+Transaction 28: Reading withdraw Account 6 with the balance: 6
+Transaction 28: Reading deposit Account 8 with the balance: 12
+Transaction 29 initialized
+Conflict found between transaction 11 and 4
+Aborting Transaction 12
+Conflict found between transaction 9 and 10
+Aborting Transaction 11
+Transaction 29: Reading withdraw Account 9 with the balance: 10
+Transaction 30 initialized
+Transaction 29: Reading deposit Account 2 with the balance: 8
+Conflict found between transaction 19 and 6
+Aborting Transaction 9
+Conflict found between transaction 19 and 10
+Transaction 30: Reading withdraw Account 6 with the balance: 6
+Transaction 31 initialized
+Transaction 30: Reading deposit Account 7 with the balance: 13
+Aborting Transaction 19
+Conflict found between transaction 16 and 4
+Transaction 31: Reading withdraw Account 0 with the balance: 7
+Transaction 32 initialized
+Transaction 31: Reading deposit Account 4 with the balance: 14
+Conflict found between transaction 5 and 6
+Conflict found between transaction 5 and 17
+Aborting Transaction 16
+Conflict found between transaction 3 and 10
+Aborting Transaction 5
+Transaction 32: Reading withdraw Account 1 with the balance: 14
+Transaction 33 initialized
+Transaction 32: Reading deposit Account 9 with the balance: 10
+Conflict found between transaction 15 and 4
+Aborting Transaction 3
+Conflict found between transaction 15 and 10
+Aborting Transaction 15
+Transaction 33: Reading withdraw Account 9 with the balance: 10
+Transaction 34 initialized
+Transaction 33: Reading deposit Account 5 with the balance: 6
+Conflict found between transaction 29 and 32
+Transaction 30: writing withdraw Account 6 with the new balance: 4
+Transaction 30: writing deposit Account 7 with the new balance: 15
+Transaction 31: writing withdraw Account 0 with the new balance: 3
+Transaction 32: writing withdraw Account 1 with the new balance: 13
+Transaction 31: writing deposit Account 4 with the new balance: 18
+Transaction Started 31, Ended 35
+Transaction Started 30, Ended 36
+Conflict found between transaction 28 and 30
+Aborting Transaction 28
+Aborting Transaction 29
+Transaction 37: Reading withdraw Account 0 with the balance: 3
+Transaction 37: Reading deposit Account 9 with the balance: 11
+Transaction 38 initialized
+Conflict found between transaction 27 and 31
+Aborting Transaction 27
+Transaction 32: writing deposit Account 9 with the new balance: 11
+Conflict found between transaction 26 and 30
+Conflict found between transaction 26 and 32
+Transaction 38: Reading withdraw Account 9 with the balance: 11
+Transaction 39 initialized
+Transaction 38: Reading deposit Account 1 with the balance: 13
+Conflict found between transaction 25 and 31
+Aborting Transaction 26
+Transaction Started 32, Ended 34
+Conflict found between transaction 24 and 31
+Aborting Transaction 25
+Transaction 39: Reading withdraw Account 8 with the balance: 12
+Transaction 40 initialized
+Transaction 39: Reading deposit Account 6 with the balance: 4
+Conflict found between transaction 37 and 38
+Aborting Transaction 37
+Transaction 38: writing withdraw Account 9 with the new balance: 10
+Aborting Transaction 24
+Transaction 38: writing deposit Account 1 with the new balance: 14
+Transaction Started 38, Ended 40
+Conflict found between transaction 33 and 32
+Transaction 41: Reading withdraw Account 8 with the balance: 12
+Transaction 42 initialized
+Transaction 41: Reading deposit Account 0 with the balance: 3
+Conflict found between transaction 33 and 38
+Transaction 42: Reading withdraw Account 7 with the balance: 15
+Transaction 42: Reading deposit Account 3 with the balance: 10
+Transaction 43 initialized
+Conflict found between transaction 39 and 41
+Transaction 41: writing withdraw Account 8 with the new balance: 10
+Transaction 41: writing deposit Account 0 with the new balance: 5
+Transaction Started 41, Ended 43
+Aborting Transaction 33
+Transaction 42: writing withdraw Account 7 with the new balance: 14
+Transaction 42: writing deposit Account 3 with the new balance: 11
+Transaction Started 42, Ended 45
+Aborting Transaction 39
+Transaction 44: Reading withdraw Account 1 with the balance: 14
+Transaction 44: Reading deposit Account 6 with the balance: 4
+Transaction 45 initialized
+Transaction 44: writing withdraw Account 1 with the new balance: 10
+Transaction 44: writing deposit Account 6 with the new balance: 8
+Transaction Started 44, Ended 46
+Transaction 47: Reading withdraw Account 4 with the balance: 18
+Transaction 48 initialized
+Transaction 47: Reading deposit Account 5 with the balance: 6
+Transaction 48: Reading withdraw Account 8 with the balance: 10
+Transaction 48: Reading deposit Account 6 with the balance: 8
+Transaction 49 initialized
+Transaction 48: writing withdraw Account 8 with the new balance: 6
+Transaction 47: writing withdraw Account 4 with the new balance: 15
+Transaction 48: writing deposit Account 6 with the new balance: 12
+Transaction 51: Reading withdraw Account 0 with the balance: 5
+Transaction 52 initialized
+Transaction 51: Reading deposit Account 9 with the balance: 10
+Transaction Started 48, Ended 50
+Transaction 47: writing deposit Account 5 with the new balance: 9
+Transaction 51: writing withdraw Account 0 with the new balance: 2
+Transaction 52: Reading withdraw Account 4 with the balance: 15
+Transaction 53 initialized
+Transaction 52: Reading deposit Account 2 with the balance: 8
+Transaction 51: writing deposit Account 9 with the new balance: 13
+Transaction Started 51, Ended 53
+Transaction Started 47, Ended 49
+Transaction 52: writing withdraw Account 4 with the new balance: 14
+Transaction 54: Reading withdraw Account 1 with the balance: 10
+Transaction 55 initialized
+Transaction 54: Reading deposit Account 6 with the balance: 12
+Transaction 52: writing deposit Account 2 with the new balance: 9
+Transaction 54: writing withdraw Account 1 with the new balance: 6
+Transaction 54: writing deposit Account 6 with the new balance: 16
+Transaction Started 54, Ended 57
+Transaction 56: Reading withdraw Account 9 with the balance: 13
+Transaction 57 initialized
+Transaction 56: Reading deposit Account 2 with the balance: 9
+Transaction Started 52, Ended 55
+Transaction 56: writing withdraw Account 9 with the new balance: 10
+Transaction 58: Reading withdraw Account 6 with the balance: 16
+Transaction 58: Reading deposit Account 8 with the balance: 6
+Transaction 59 initialized
+Transaction 58: writing withdraw Account 6 with the new balance: 12
+Transaction 56: writing deposit Account 2 with the new balance: 12
+Transaction Started 56, Ended 59
+Transaction 58: writing deposit Account 8 with the new balance: 10
+Transaction 61: Reading withdraw Account 7 with the balance: 14
+Transaction 61: Reading deposit Account 5 with the balance: 9
+Transaction 61: writing withdraw Account 7 with the new balance: 12
+Transaction 61: writing deposit Account 5 with the new balance: 11
+Transaction Started 61, Ended 62
+Transaction 62 initialized
+Transaction Started 58, Ended 60
+Transaction 63: Reading withdraw Account 9 with the balance: 10
+After Transaction 61
+Transaction 63: Reading deposit Account 5 with the balance: 11
+The Total sum of balances is: $100
+Transaction 63: writing withdraw Account 9 with the new balance: 6
+Transaction 63: writing deposit Account 5 with the new balance: 15
+Transaction Started 63, Ended 64
+After Transaction 63
+The Total sum of balances is: $100
+ID: 0, Account Balance: 2
+ID: 1, Account Balance: 6
+ID: 2, Account Balance: 12
+ID: 3, Account Balance: 11
+ID: 4, Account Balance: 14
+ID: 5, Account Balance: 15
+ID: 6, Account Balance: 12
+ID: 7, Account Balance: 12
+ID: 8, Account Balance: 10
+ID: 9, Account Balance: 6
+The Total sum of balances is: $100
+Transaction 65 initialized
+Transaction 66 initialized
+Transaction 65: Reading withdraw Account 3 with the balance: 11
+Transaction 65: Reading deposit Account 8 with the balance: 10
+Transaction 65: writing withdraw Account 3 with the new balance: 7
+Transaction 65: writing deposit Account 8 with the new balance: 14
+Transaction Started 65, Ended 67
+Transaction 66: Reading withdraw Account 5 with the balance: 15
+Transaction 66: Reading deposit Account 1 with the balance: 6
+Transaction 66: writing withdraw Account 5 with the new balance: 11
+Transaction 66: writing deposit Account 1 with the new balance: 10
+Transaction Started 66, Ended 68
+After Transaction 66
+The Total sum of balances is: $100
+Transaction 67 initialized
+Transaction 70 initialized
+Transaction 69: Reading withdraw Account 6 with the balance: 12
+Transaction 69: Reading deposit Account 3 with the balance: 7
+Transaction 69: writing withdraw Account 6 with the new balance: 9
+Transaction 69: writing deposit Account 3 with the new balance: 10
+Transaction Started 69, Ended 71
+Transaction 70: Reading withdraw Account 8 with the balance: 14
+Transaction 70: Reading deposit Account 7 with the balance: 12
+Transaction 70: writing withdraw Account 8 with the new balance: 13
+Transaction 70: writing deposit Account 7 with the new balance: 13
+Transaction Started 70, Ended 72
+After Transaction 70
+The Total sum of balances is: $100
+Transaction 71 initialized
+Transaction 74 initialized
+Transaction 73: Reading withdraw Account 6 with the balance: 9
+Transaction 74: Reading withdraw Account 3 with the balance: 10
+Transaction 75 initialized
+Transaction 74: Reading deposit Account 7 with the balance: 13
+Transaction 73: Reading deposit Account 4 with the balance: 14
+Transaction 74: writing withdraw Account 3 with the new balance: 6
+Transaction 75: Reading withdraw Account 6 with the balance: 9
+Transaction 76 initialized
+Transaction 75: Reading deposit Account 3 with the balance: 6
+Transaction 74: writing deposit Account 7 with the new balance: 17
+Transaction 73: writing withdraw Account 6 with the new balance: 6
+Transaction Started 74, Ended 76
+Conflict found between transaction 75 and 73
+Conflict found between transaction 75 and 74
+Transaction 78: Reading withdraw Account 5 with the balance: 11
+Transaction 79 initialized
+Transaction 78: Reading deposit Account 9 with the balance: 6
+Aborting Transaction 75
+Transaction 73: writing deposit Account 4 with the new balance: 17
+Transaction Started 73, Ended 77
+Transaction 78: writing withdraw Account 5 with the new balance: 7
+Transaction 78: writing deposit Account 9 with the new balance: 10
+Transaction Started 78, Ended 80
+Transaction 79: Reading withdraw Account 6 with the balance: 6
+Transaction 80 initialized
+Transaction 79: Reading deposit Account 2 with the balance: 12
+Transaction 81: Reading withdraw Account 6 with the balance: 6
+Transaction 82 initialized
+Transaction 81: Reading deposit Account 2 with the balance: 16
+Transaction 79: writing withdraw Account 6 with the new balance: 2
+Conflict found between transaction 81 and 79
+Aborting Transaction 81
+Transaction 83: Reading withdraw Account 0 with the balance: 2
+Transaction 83: Reading deposit Account 3 with the balance: 6
+Transaction 84 initialized
+Transaction 83: writing withdraw Account 0 with the new balance: 0
+Transaction 83: writing deposit Account 3 with the new balance: 8
+Transaction 79: writing deposit Account 2 with the new balance: 16
+Transaction Started 79, Ended 82
+Transaction Started 83, Ended 84
+Transaction 85: Reading withdraw Account 0 with the balance: 0
+Transaction 86 initialized
+Transaction 85: Reading deposit Account 4 with the balance: 17
+Transaction 86: Reading withdraw Account 2 with the balance: 16
+Transaction 87 initialized
+Transaction 86: Reading deposit Account 3 with the balance: 8
+Transaction 85: writing withdraw Account 0 with the new balance: -4
+Transaction 86: writing withdraw Account 2 with the new balance: 12
+Transaction 88: Reading withdraw Account 0 with the balance: -4
+Transaction 89 initialized
+Transaction 88: Reading deposit Account 6 with the balance: 2
+Transaction 86: writing deposit Account 3 with the new balance: 12
+Transaction Started 86, Ended 89
+Transaction 85: writing deposit Account 4 with the new balance: 21
+Transaction Started 85, Ended 87
+Transaction 88: writing withdraw Account 0 with the new balance: -6
+Transaction 90: Reading withdraw Account 6 with the balance: 2
+Transaction 91 initialized
+Transaction 90: Reading deposit Account 2 with the balance: 12
+Transaction 88: writing deposit Account 6 with the new balance: 4
+Transaction Started 88, Ended 91
+Conflict found between transaction 90 and 88
+Transaction 92: Reading withdraw Account 6 with the balance: 4
+Transaction 93 initialized
+Transaction 92: Reading deposit Account 3 with the balance: 12
+Aborting Transaction 90
+Transaction 92: writing withdraw Account 6 with the new balance: 3
+Transaction 92: writing deposit Account 3 with the new balance: 13
+Transaction 93: Reading withdraw Account 1 with the balance: 10
+Transaction 94 initialized
+Transaction 93: Reading deposit Account 3 with the balance: 13
+Transaction Started 92, Ended 94
+Conflict found between transaction 93 and 92
+Transaction 95: Reading withdraw Account 6 with the balance: 3
+Transaction 96 initialized
+Transaction 95: Reading deposit Account 9 with the balance: 10
+Aborting Transaction 93
+Transaction 95: writing withdraw Account 6 with the new balance: 0
+Transaction 95: writing deposit Account 9 with the new balance: 13
+Transaction 96: Reading withdraw Account 6 with the balance: 3
+Transaction 96: Reading deposit Account 3 with the balance: 13
+Transaction 97 initialized
+Conflict found between transaction 96 and 95
+Transaction Started 95, Ended 97
+Aborting Transaction 96
+Transaction 98: Reading withdraw Account 1 with the balance: 10
+Transaction 98: Reading deposit Account 3 with the balance: 13
+Transaction 99 initialized
+Transaction 98: writing withdraw Account 1 with the new balance: 6
+Transaction 100: Reading withdraw Account 3 with the balance: 17
+Transaction 101 initialized
+Transaction 100: Reading deposit Account 0 with the balance: -6
+Transaction 98: writing deposit Account 3 with the new balance: 17
+Transaction Started 98, Ended 99
+Transaction 100: writing withdraw Account 3 with the new balance: 14
+Transaction 100: writing deposit Account 0 with the new balance: -3
+Transaction 101: Reading withdraw Account 8 with the balance: 13
+Transaction 102 initialized
+Transaction 101: Reading deposit Account 3 with the balance: 14
+Transaction Started 100, Ended 102
+Conflict found between transaction 101 and 100
+Aborting Transaction 101
+Transaction 103: Reading withdraw Account 6 with the balance: 0
+Transaction 104 initialized
+Transaction 103: Reading deposit Account 3 with the balance: 14
+Transaction 104: Reading withdraw Account 1 with the balance: 6
+Transaction 105 initialized
+Transaction 104: Reading deposit Account 3 with the balance: 18
+Conflict found between transaction 104 and 103
+Transaction 103: writing withdraw Account 6 with the new balance: -4
+Aborting Transaction 104
+Transaction 106: Reading withdraw Account 6 with the balance: -4
+Transaction 107 initialized
+Transaction 106: Reading deposit Account 2 with the balance: 12
+Transaction 103: writing deposit Account 3 with the new balance: 18
+Transaction 106: writing withdraw Account 6 with the new balance: -5
+Transaction 107: Reading withdraw Account 8 with the balance: 13
+Transaction 106: writing deposit Account 2 with the new balance: 13
+Transaction 109 initialized
+Transaction Started 103, Ended 105
+Transaction 109: Reading withdraw Account 1 with the balance: 6
+Transaction Started 106, Ended 108
+Transaction 107: Reading deposit Account 3 with the balance: 18
+Transaction 107: writing withdraw Account 8 with the new balance: 12
+Transaction 109: Reading deposit Account 3 with the balance: 18
+Transaction 107: writing deposit Account 3 with the new balance: 19
+Conflict found between transaction 109 and 107
+Transaction Started 107, Ended 110
+Aborting Transaction 109
+After Transaction 107
+The Total sum of balances is: $100
+Transaction 111 initialized
+Transaction 111: Reading withdraw Account 1 with the balance: 6
+Transaction 111: Reading deposit Account 3 with the balance: 19
+Transaction 111: writing withdraw Account 1 with the new balance: 4
+Transaction 111: writing deposit Account 3 with the new balance: 21
+Transaction Started 111, Ended 112
+After Transaction 111
+The Total sum of balances is: $100
+ID: 0, Account Balance: -3
+ID: 1, Account Balance: 4
+ID: 2, Account Balance: 13
+ID: 3, Account Balance: 21
+ID: 4, Account Balance: 21
+ID: 5, Account Balance: 7
+ID: 6, Account Balance: -5
+ID: 7, Account Balance: 17
+ID: 8, Account Balance: 12
+ID: 9, Account Balance: 13
+The Total sum of balances is: $100
+Transaction 113 initialized
+Transaction 113: Reading withdraw Account 1 with the balance: 4
+Transaction 113: Reading deposit Account 5 with the balance: 7
+Transaction 113: writing withdraw Account 1 with the new balance: 1
+Transaction 113: writing deposit Account 5 with the new balance: 10
+Transaction Started 113, Ended 114
+After Transaction 113
+The Total sum of balances is: $100
+Transaction 114 initialized
+Transaction 116 initialized
+Transaction 115: Reading withdraw Account 4 with the balance: 21
+Transaction 115: Reading deposit Account 5 with the balance: 10
+Transaction 115: writing withdraw Account 4 with the new balance: 17
+Transaction 115: writing deposit Account 5 with the new balance: 14
+Transaction Started 115, Ended 117
+Transaction 116: Reading withdraw Account 9 with the balance: 13
+Transaction 116: Reading deposit Account 7 with the balance: 17
+Transaction 116: writing withdraw Account 9 with the new balance: 11
+Transaction 116: writing deposit Account 7 with the new balance: 19
+Transaction Started 116, Ended 118
+After Transaction 116
+The Total sum of balances is: $100
+Transaction 117 initialized
+Transaction 120 initialized
+Transaction 119: Reading withdraw Account 4 with the balance: 17
+Transaction 119: Reading deposit Account 1 with the balance: 1
+Transaction 120: Reading withdraw Account 5 with the balance: 14
+Transaction 120: Reading deposit Account 0 with the balance: -3
+Transaction 120: writing withdraw Account 5 with the new balance: 13
+Transaction 121 initialized
+Transaction 120: writing deposit Account 0 with the new balance: -2
+Transaction 119: writing withdraw Account 4 with the new balance: 13
+Transaction Started 120, Ended 122
+Transaction 123: Reading withdraw Account 7 with the balance: 19
+Transaction 124 initialized
+Transaction 123: Reading deposit Account 6 with the balance: -5
+Transaction 119: writing deposit Account 1 with the new balance: 5
+Transaction 123: writing withdraw Account 7 with the new balance: 17
+Transaction 124: Reading withdraw Account 2 with the balance: 13
+Transaction 125 initialized
+Transaction 124: Reading deposit Account 5 with the balance: 13
+Transaction 123: writing deposit Account 6 with the new balance: -3
+Transaction Started 119, Ended 121
+Transaction Started 123, Ended 125
+Transaction 124: writing withdraw Account 2 with the new balance: 12
+Transaction 124: writing deposit Account 5 with the new balance: 14
+Transaction 126: Reading withdraw Account 9 with the balance: 11
+Transaction 127 initialized
+Transaction 126: Reading deposit Account 3 with the balance: 21
+Transaction Started 124, Ended 127
+Transaction 126: writing withdraw Account 9 with the new balance: 9
+Transaction 128: Reading withdraw Account 5 with the balance: 14
+Transaction 129 initialized
+Transaction 128: Reading deposit Account 4 with the balance: 13
+Transaction 126: writing deposit Account 3 with the new balance: 23
+Transaction 128: writing withdraw Account 5 with the new balance: 10
+Transaction 130: Reading withdraw Account 0 with the balance: -2
+Transaction 130: Reading deposit Account 3 with the balance: 23
+Transaction 130: writing withdraw Account 0 with the new balance: -3
+Transaction 130: writing deposit Account 3 with the new balance: 24
+Transaction Started 130, Ended 132
+Transaction 131 initialized
+After Transaction 130
+The Total sum of balances is: $100
+Transaction 128: writing deposit Account 4 with the new balance: 17
+Transaction Started 128, Ended 131
+Transaction Started 126, Ended 129
+Transaction 133: Reading withdraw Account 2 with the balance: 12
+Transaction 133: Reading deposit Account 3 with the balance: 24
+Transaction 134 initialized
+Transaction 133: writing withdraw Account 2 with the new balance: 10
+Transaction 135: Reading withdraw Account 3 with the balance: 26
+Transaction 136 initialized
+Transaction 135: Reading deposit Account 0 with the balance: -3
+Transaction 133: writing deposit Account 3 with the new balance: 26
+Transaction 135: writing withdraw Account 3 with the new balance: 25
+Transaction 136: Reading withdraw Account 1 with the balance: 5
+Transaction 137 initialized
+Transaction 136: Reading deposit Account 4 with the balance: 17
+Transaction 135: writing deposit Account 0 with the new balance: -2
+Transaction Started 133, Ended 134
+Transaction Started 135, Ended 137
+Transaction 136: writing withdraw Account 1 with the new balance: 2
+Transaction 138: Reading withdraw Account 4 with the balance: 17
+Transaction 139 initialized
+Transaction 138: Reading deposit Account 2 with the balance: 10
+Transaction 136: writing deposit Account 4 with the new balance: 20
+Conflict found between transaction 138 and 136
+Transaction 140: Reading withdraw Account 0 with the balance: -2
+Transaction 141 initialized
+Transaction 140: Reading deposit Account 5 with the balance: 10
+Aborting Transaction 138
+Transaction Started 136, Ended 139
+Transaction 140: writing withdraw Account 0 with the new balance: -4
+Transaction 140: writing deposit Account 5 with the new balance: 12
+Transaction 141: Reading withdraw Account 0 with the balance: -2
+Transaction 142 initialized
+Transaction 141: Reading deposit Account 4 with the balance: 20
+Transaction Started 140, Ended 142
+Conflict found between transaction 141 and 140
+Aborting Transaction 141
+Transaction 143: Reading withdraw Account 0 with the balance: -4
+Transaction 144 initialized
+Transaction 143: Reading deposit Account 1 with the balance: 2
+Transaction 144: Reading withdraw Account 0 with the balance: -4
+Transaction 145 initialized
+Transaction 144: Reading deposit Account 8 with the balance: 12
+Transaction 143: writing withdraw Account 0 with the new balance: -6
+Transaction 143: writing deposit Account 1 with the new balance: 4
+Conflict found between transaction 144 and 143
+Transaction 146: Reading withdraw Account 8 with the balance: 12
+Transaction 147 initialized
+Transaction 146: Reading deposit Account 2 with the balance: 10
+Aborting Transaction 144
+Transaction Started 143, Ended 145
+Transaction 146: writing withdraw Account 8 with the new balance: 8
+Transaction 147: Reading withdraw Account 0 with the balance: -6
+Transaction 148 initialized
+Transaction 147: Reading deposit Account 6 with the balance: -3
+Transaction 146: writing deposit Account 2 with the new balance: 14
+Transaction 147: writing withdraw Account 0 with the new balance: -10
+Transaction 149: Reading withdraw Account 0 with the balance: -6
+Transaction 150 initialized
+Transaction 149: Reading deposit Account 4 with the balance: 20
+Transaction 147: writing deposit Account 6 with the new balance: 1
+Transaction Started 147, Ended 150
+Transaction Started 146, Ended 148
+Conflict found between transaction 149 and 147
+Transaction 151: Reading withdraw Account 4 with the balance: 20
+Transaction 152 initialized
+Transaction 151: Reading deposit Account 2 with the balance: 14
+Aborting Transaction 149
+Transaction 151: writing withdraw Account 4 with the new balance: 19
+Transaction 152: Reading withdraw Account 0 with the balance: -10
+Transaction 151: writing deposit Account 2 with the new balance: 15
+Transaction Started 151, Ended 153
+Transaction 152: Reading deposit Account 8 with the balance: 8
+Transaction 154 initialized
+Transaction 152: writing withdraw Account 0 with the new balance: -14
+Transaction 155: Reading withdraw Account 0 with the balance: -14
+Transaction 155: Reading deposit Account 4 with the balance: 19
+Transaction 152: writing deposit Account 8 with the new balance: 12
+Transaction 155: writing withdraw Account 0 with the new balance: -17
+Transaction Started 152, Ended 154
+Transaction 155: writing deposit Account 4 with the new balance: 22
+Transaction Started 155, Ended 156
+After Transaction 152
+After Transaction 155
+The Total sum of balances is: $100
+The Total sum of balances is: $100
+ID: 0, Account Balance: -17
+ID: 1, Account Balance: 4
+ID: 2, Account Balance: 15
+ID: 3, Account Balance: 25
+ID: 4, Account Balance: 22
+ID: 5, Account Balance: 12
+ID: 6, Account Balance: 1
+ID: 7, Account Balance: 17
+ID: 8, Account Balance: 12
+ID: 9, Account Balance: 9
+The Total sum of balances is: $100
+Transaction 157 initialized
+Transaction 158 initialized
+Transaction 157: Reading withdraw Account 7 with the balance: 17
+Transaction 158: Reading withdraw Account 4 with the balance: 22
+Transaction 159 initialized
+Transaction 158: Reading deposit Account 3 with the balance: 25
+Transaction 158: writing withdraw Account 4 with the new balance: 18
+Transaction 158: writing deposit Account 3 with the new balance: 29
+Transaction Started 158, Ended 160
+Transaction 157: Reading deposit Account 8 with the balance: 12
+Transaction 157: writing withdraw Account 7 with the new balance: 15
+Transaction 157: writing deposit Account 8 with the new balance: 14
+Transaction Started 157, Ended 161
+Transaction 159: Reading withdraw Account 8 with the balance: 12
+Transaction 160 initialized
+Transaction 159: Reading deposit Account 9 with the balance: 9
+Transaction 162: Reading withdraw Account 4 with the balance: 18
+Transaction 163 initialized
+Transaction 162: Reading deposit Account 7 with the balance: 15
+Conflict found between transaction 159 and 157
+Transaction 163: Reading withdraw Account 0 with the balance: -17
+Transaction 163: Reading deposit Account 5 with the balance: 12
+Transaction 164 initialized
+Transaction 163: writing withdraw Account 0 with the new balance: -19
+Transaction 163: writing deposit Account 5 with the new balance: 14
+Transaction Started 163, Ended 165
+Transaction 162: writing withdraw Account 4 with the new balance: 14
+Aborting Transaction 159
+Transaction 162: writing deposit Account 7 with the new balance: 19
+Transaction 166: Reading withdraw Account 2 with the balance: 15
+Transaction 167 initialized
+Transaction 166: Reading deposit Account 6 with the balance: 1
+Transaction Started 162, Ended 164
+Transaction 166: writing withdraw Account 2 with the new balance: 12
+Transaction 167: Reading withdraw Account 7 with the balance: 19
+Transaction 167: Reading deposit Account 1 with the balance: 4
+Transaction 168 initialized
+Transaction 167: writing withdraw Account 7 with the new balance: 16
+Transaction 166: writing deposit Account 6 with the new balance: 4
+Transaction Started 166, Ended 168
+Transaction 167: writing deposit Account 1 with the new balance: 7
+Transaction Started 167, Ended 169
+Transaction 170: Reading withdraw Account 4 with the balance: 14
+Transaction 171 initialized
+Transaction 170: Reading deposit Account 9 with the balance: 9
+Transaction 171: Reading withdraw Account 6 with the balance: 4
+Transaction 171: Reading deposit Account 9 with the balance: 13
+Transaction 172 initialized
+Conflict found between transaction 171 and 170
+Transaction 170: writing withdraw Account 4 with the new balance: 10
+Transaction 170: writing deposit Account 9 with the new balance: 13
+Transaction Started 170, Ended 172
+Aborting Transaction 171
+Transaction 173: Reading withdraw Account 1 with the balance: 7
+Transaction 174 initialized
+Transaction 173: Reading deposit Account 3 with the balance: 29
+Transaction 174: Reading withdraw Account 6 with the balance: 4
+Transaction 175 initialized
+Transaction 174: Reading deposit Account 9 with the balance: 13
+Transaction 173: writing withdraw Account 1 with the new balance: 3
+Transaction 174: writing withdraw Account 6 with the new balance: 1
+Transaction 174: writing deposit Account 9 with the new balance: 16
+Transaction 176: Reading withdraw Account 9 with the balance: 13
+Transaction 176: Reading deposit Account 8 with the balance: 14
+Transaction 177 initialized
+Conflict found between transaction 176 and 174
+Transaction Started 174, Ended 177
+Transaction 173: writing deposit Account 3 with the new balance: 33
+Aborting Transaction 176
+Transaction 178: Reading withdraw Account 7 with the balance: 16
+Transaction 178: Reading deposit Account 3 with the balance: 33
+Transaction 179 initialized
+Transaction 178: writing withdraw Account 7 with the new balance: 15
+Transaction 178: writing deposit Account 3 with the new balance: 34
+Transaction Started 178, Ended 179
+Transaction Started 173, Ended 175
+Transaction 180: Reading withdraw Account 1 with the balance: 3
+Transaction 181 initialized
+Transaction 180: Reading deposit Account 3 with the balance: 34
+Transaction 181: Reading withdraw Account 5 with the balance: 14
+Transaction 181: Reading deposit Account 6 with the balance: 1
+Transaction 182 initialized
+Transaction 181: writing withdraw Account 5 with the new balance: 13
+Transaction 180: writing withdraw Account 1 with the new balance: 1
+Transaction 180: writing deposit Account 3 with the new balance: 36
+Transaction Started 180, Ended 182
+Transaction 181: writing deposit Account 6 with the new balance: 2
+Transaction 184: Reading withdraw Account 8 with the balance: 14
+Transaction 185 initialized
+Transaction 184: Reading deposit Account 2 with the balance: 12
+Transaction 184: writing withdraw Account 8 with the new balance: 13
+Transaction 184: writing deposit Account 2 with the new balance: 13
+Transaction Started 184, Ended 186
+Transaction Started 181, Ended 183
+Transaction 185: Reading withdraw Account 7 with the balance: 15
+Transaction 186 initialized
+Transaction 185: Reading deposit Account 0 with the balance: -19
+Transaction 187: Reading withdraw Account 0 with the balance: -19
+Transaction 187: Reading deposit Account 1 with the balance: 1
+Transaction 188 initialized
+Conflict found between transaction 187 and 185
+Aborting Transaction 187
+Transaction 185: writing withdraw Account 7 with the new balance: 12
+Transaction 189: Reading withdraw Account 6 with the balance: 2
+Transaction 190 initialized
+Transaction 189: Reading deposit Account 5 with the balance: 13
+Transaction 185: writing deposit Account 0 with the new balance: -16
+Transaction Started 185, Ended 188
+Transaction 189: writing withdraw Account 6 with the new balance: 0
+Transaction 189: writing deposit Account 5 with the new balance: 15
+Transaction 190: Reading withdraw Account 9 with the balance: 16
+Transaction 190: Reading deposit Account 8 with the balance: 13
+Transaction 190: writing withdraw Account 9 with the new balance: 14
+Transaction 190: writing deposit Account 8 with the new balance: 15
+Transaction Started 190, Ended 192
+After Transaction 190
+Transaction 191 initialized
+The Total sum of balances is: $100
+Transaction Started 189, Ended 191
+Transaction 193: Reading withdraw Account 6 with the balance: 0
+Transaction 194 initialized
+Transaction 193: Reading deposit Account 9 with the balance: 14
+Transaction 193: writing withdraw Account 6 with the new balance: -2
+Transaction 193: writing deposit Account 9 with the new balance: 16
+Transaction Started 193, Ended 195
+Transaction 194: Reading withdraw Account 8 with the balance: 15
+Transaction 195 initialized
+Transaction 194: Reading deposit Account 9 with the balance: 16
+Conflict found between transaction 194 and 193
+Transaction 196: Reading withdraw Account 6 with the balance: -2
+Transaction 197 initialized
+Transaction 196: Reading deposit Account 0 with the balance: -16
+Aborting Transaction 194
+Transaction 196: writing withdraw Account 6 with the new balance: -4
+Transaction 197: Reading withdraw Account 0 with the balance: -16
+Transaction 196: writing deposit Account 0 with the new balance: -14
+Transaction 197: Reading deposit Account 1 with the balance: 1
+Conflict found between transaction 197 and 196
+Aborting Transaction 197
+Transaction 199 initialized
+Transaction Started 196, Ended 198
+Transaction 199: Reading withdraw Account 8 with the balance: 15
+Transaction 199: Reading deposit Account 9 with the balance: 16
+Transaction 199: writing withdraw Account 8 with the new balance: 12
+Transaction 199: writing deposit Account 9 with the new balance: 19
+Transaction Started 199, Ended 200
+After Transaction 199
+Transaction 201 initialized
+The Total sum of balances is: $100
+Transaction 201: Reading withdraw Account 0 with the balance: -14
+Transaction 201: Reading deposit Account 1 with the balance: 1
+Transaction 201: writing withdraw Account 0 with the new balance: -17
+Transaction 201: writing deposit Account 1 with the new balance: 4
+Transaction Started 201, Ended 202
+After Transaction 201
+The Total sum of balances is: $100
+ID: 0, Account Balance: -17
+ID: 1, Account Balance: 4
+ID: 2, Account Balance: 13
+ID: 3, Account Balance: 36
+ID: 4, Account Balance: 10
+ID: 5, Account Balance: 15
+ID: 6, Account Balance: -4
+ID: 7, Account Balance: 12
+ID: 8, Account Balance: 12
+ID: 9, Account Balance: 19
+The Total sum of balances is: $100
+Transaction 203 initialized
+Transaction 204 initialized
+Transaction 203: Reading withdraw Account 1 with the balance: 4
+Transaction 203: Reading deposit Account 3 with the balance: 36
+Transaction 203: writing withdraw Account 1 with the new balance: 3
+Transaction 203: writing deposit Account 3 with the new balance: 37
+Transaction Started 203, Ended 205
+Transaction 204: Reading withdraw Account 7 with the balance: 12
+Transaction 204: Reading deposit Account 5 with the balance: 15
+Transaction 204: writing withdraw Account 7 with the new balance: 10
+Transaction 204: writing deposit Account 5 with the new balance: 17
+Transaction 205 initialized
+Transaction Started 204, Ended 206
+Transaction 207: Reading withdraw Account 5 with the balance: 17
+Transaction 207: Reading deposit Account 6 with the balance: -4
+Transaction 208 initialized
+Transaction 207: writing withdraw Account 5 with the new balance: 13
+Transaction 207: writing deposit Account 6 with the new balance: 0
+Transaction 209: Reading withdraw Account 6 with the balance: 0
+Transaction 209: Reading deposit Account 1 with the balance: 3
+Transaction 210 initialized
+Transaction 209: writing withdraw Account 6 with the new balance: -1
+Transaction 209: writing deposit Account 1 with the new balance: 4
+Transaction Started 207, Ended 208
+Transaction Started 209, Ended 210
+Transaction 211: Reading withdraw Account 0 with the balance: -17
+Transaction 211: Reading deposit Account 2 with the balance: 13
+Transaction 212 initialized
+Transaction 211: writing withdraw Account 0 with the new balance: -18
+Transaction 211: writing deposit Account 2 with the new balance: 14
+Transaction 213: Reading withdraw Account 3 with the balance: 37
+Transaction 213: Reading deposit Account 1 with the balance: 4
+Transaction 214 initialized
+Transaction 213: writing withdraw Account 3 with the new balance: 36
+Transaction Started 211, Ended 212
+Transaction 213: writing deposit Account 1 with the new balance: 5
+Transaction 215: Reading withdraw Account 5 with the balance: 13
+Transaction 215: Reading deposit Account 2 with the balance: 14
+Transaction 216 initialized
+Transaction 215: writing withdraw Account 5 with the new balance: 9
+Transaction Started 213, Ended 214
+Transaction 215: writing deposit Account 2 with the new balance: 18
+Transaction 217: Reading withdraw Account 7 with the balance: 10
+Transaction 218 initialized
+Transaction 217: Reading deposit Account 4 with the balance: 10
+Transaction Started 215, Ended 216
+Transaction 217: writing withdraw Account 7 with the new balance: 6
+Transaction 217: writing deposit Account 4 with the new balance: 14
+Transaction 218: Reading withdraw Account 8 with the balance: 12
+Transaction 219 initialized
+Transaction 218: Reading deposit Account 3 with the balance: 36
+Transaction Started 217, Ended 219
+Transaction 218: writing withdraw Account 8 with the new balance: 10
+Transaction 218: writing deposit Account 3 with the new balance: 38
+Transaction 220: Reading withdraw Account 4 with the balance: 14
+Transaction 221 initialized
+Transaction 220: Reading deposit Account 2 with the balance: 18
+Transaction Started 218, Ended 221
+Transaction 220: writing withdraw Account 4 with the new balance: 13
+Transaction 222: Reading withdraw Account 0 with the balance: -18
+Transaction 223 initialized
+Transaction 222: Reading deposit Account 3 with the balance: 38
+Transaction 220: writing deposit Account 2 with the new balance: 19
+Transaction Started 220, Ended 223
+Transaction 222: writing withdraw Account 0 with the new balance: -22
+Transaction 224: Reading withdraw Account 4 with the balance: 13
+Transaction 225 initialized
+Transaction 224: Reading deposit Account 6 with the balance: -1
+Transaction 222: writing deposit Account 3 with the new balance: 42
+Transaction Started 222, Ended 225
+Transaction 224: writing withdraw Account 4 with the new balance: 10
+Transaction 226: Reading withdraw Account 0 with the balance: -22
+Transaction 227 initialized
+Transaction 226: Reading deposit Account 4 with the balance: 10
+Transaction 224: writing deposit Account 6 with the new balance: 2
+Conflict found between transaction 226 and 224
+Transaction 228: Reading withdraw Account 4 with the balance: 10
+Transaction 229 initialized
+Transaction 228: Reading deposit Account 8 with the balance: 10
+Transaction 228: writing withdraw Account 4 with the new balance: 6
+Transaction 228: writing deposit Account 8 with the new balance: 14
+Transaction Started 228, Ended 230
+Aborting Transaction 226
+Transaction Started 224, Ended 227
+Transaction 229: Reading withdraw Account 7 with the balance: 6
+Transaction 229: Reading deposit Account 5 with the balance: 9
+Transaction 230 initialized
+Transaction 229: writing withdraw Account 7 with the new balance: 4
+Transaction 232: Reading withdraw Account 3 with the balance: 42
+Transaction 232: Reading deposit Account 5 with the balance: 11
+Transaction 233 initialized
+Transaction 232: writing withdraw Account 3 with the new balance: 38
+Transaction 232: writing deposit Account 5 with the new balance: 15
+Transaction Started 232, Ended 233
+Transaction 229: writing deposit Account 5 with the new balance: 11
+Transaction 234: Reading withdraw Account 0 with the balance: -22
+Transaction 235 initialized
+Transaction 234: Reading deposit Account 2 with the balance: 19
+Transaction Started 229, Ended 231
+Transaction 234: writing withdraw Account 0 with the new balance: -25
+Transaction 235: Reading withdraw Account 3 with the balance: 38
+Transaction 236 initialized
+Transaction 235: Reading deposit Account 0 with the balance: -25
+Transaction 234: writing deposit Account 2 with the new balance: 22
+Transaction Started 234, Ended 236
+Conflict found between transaction 235 and 234
+Aborting Transaction 235
+Transaction 237: Reading withdraw Account 0 with the balance: -25
+Transaction 237: Reading deposit Account 4 with the balance: 6
+Transaction 238 initialized
+Transaction 237: writing withdraw Account 0 with the new balance: -27
+Transaction 237: writing deposit Account 4 with the new balance: 8
+Transaction Started 237, Ended 238
+Transaction 239: Reading withdraw Account 3 with the balance: 38
+Transaction 240 initialized
+Transaction 239: Reading deposit Account 4 with the balance: 8
+Transaction 240: Reading withdraw Account 3 with the balance: 38
+Transaction 240: Reading deposit Account 0 with the balance: -27
+Transaction 241 initialized
+Conflict found between transaction 240 and 239
+Aborting Transaction 240
+Transaction 239: writing withdraw Account 3 with the new balance: 35
+Transaction 242: Reading withdraw Account 0 with the balance: -27
+Transaction 239: writing deposit Account 4 with the new balance: 11
+Transaction 242: Reading deposit Account 4 with the balance: 11
+Transaction Started 239, Ended 241
+After Transaction 239
+Transaction 244 initialized
+Transaction 242: writing withdraw Account 0 with the new balance: -28
+Transaction 242: writing deposit Account 4 with the new balance: 12
+Transaction Started 242, Ended 243
+Transaction 244: Reading withdraw Account 3 with the balance: 35
+The Total sum of balances is: $100
+Transaction 244: Reading deposit Account 0 with the balance: -28
+Transaction 244: writing withdraw Account 3 with the new balance: 33
+Transaction 244: writing deposit Account 0 with the new balance: -26
+Transaction Started 244, Ended 245
+After Transaction 244
+The Total sum of balances is: $100
+ID: 0, Account Balance: -26
+ID: 1, Account Balance: 5
+ID: 2, Account Balance: 22
+ID: 3, Account Balance: 33
+ID: 4, Account Balance: 12
+ID: 5, Account Balance: 15
+ID: 6, Account Balance: 2
+ID: 7, Account Balance: 4
+ID: 8, Account Balance: 14
+ID: 9, Account Balance: 19
+The Total sum of balances is: $100
+Transaction 246 initialized
+Transaction 247 initialized
+Transaction 246: Reading withdraw Account 5 with the balance: 15
+Transaction 247: Reading withdraw Account 3 with the balance: 33
+Transaction 247: Reading deposit Account 2 with the balance: 22
+Transaction 248 initialized
+Transaction 247: writing withdraw Account 3 with the new balance: 32
+Transaction 247: writing deposit Account 2 with the new balance: 23
+Transaction Started 247, Ended 248
+Transaction 246: Reading deposit Account 0 with the balance: -26
+Transaction 246: writing withdraw Account 5 with the new balance: 14
+Transaction 246: writing deposit Account 0 with the new balance: -25
+Transaction Started 246, Ended 250
+Transaction 249: Reading withdraw Account 7 with the balance: 4
+Transaction 250 initialized
+Transaction 249: Reading deposit Account 1 with the balance: 5
+Transaction 251: Reading withdraw Account 1 with the balance: 5
+Transaction 251: Reading deposit Account 9 with the balance: 19
+Conflict found between transaction 251 and 249
+Aborting Transaction 251
+Transaction 252 initialized
+Transaction 249: writing withdraw Account 7 with the new balance: 1
+Transaction 249: writing deposit Account 1 with the new balance: 8
+Transaction Started 249, Ended 252
+Transaction 253: Reading withdraw Account 2 with the balance: 23
+Transaction 253: Reading deposit Account 1 with the balance: 8
+Transaction 254 initialized
+Transaction 253: writing withdraw Account 2 with the new balance: 21
+Transaction 255: Reading withdraw Account 4 with the balance: 12
+Transaction 255: Reading deposit Account 7 with the balance: 1
+Transaction 256 initialized
+Transaction 255: writing withdraw Account 4 with the new balance: 8
+Transaction 253: writing deposit Account 1 with the new balance: 10
+Transaction 255: writing deposit Account 7 with the new balance: 5
+Transaction 257: Reading withdraw Account 8 with the balance: 14
+Transaction 257: Reading deposit Account 0 with the balance: -25
+Transaction 258 initialized
+Transaction 257: writing withdraw Account 8 with the new balance: 11
+Transaction 257: writing deposit Account 0 with the new balance: -22
+Transaction Started 257, Ended 258
+Transaction Started 255, Ended 256
+Transaction Started 253, Ended 254
+Transaction 259: Reading withdraw Account 0 with the balance: -22
+Transaction 260 initialized
+Transaction 259: Reading deposit Account 2 with the balance: 21
+Transaction 260: Reading withdraw Account 1 with the balance: 10
+Transaction 260: Reading deposit Account 3 with the balance: 32
+Transaction 261 initialized
+Transaction 260: writing withdraw Account 1 with the new balance: 9
+Transaction 260: writing deposit Account 3 with the new balance: 33
+Transaction 259: writing withdraw Account 0 with the new balance: -24
+Transaction 259: writing deposit Account 2 with the new balance: 23
+Transaction Started 259, Ended 261
+Transaction Started 260, Ended 262
+Transaction 263: Reading withdraw Account 4 with the balance: 8
+Transaction 264 initialized
+Transaction 263: Reading deposit Account 2 with the balance: 23
+Transaction 264: Reading withdraw Account 1 with the balance: 9
+Transaction 265 initialized
+Transaction 264: Reading deposit Account 4 with the balance: 5
+Conflict found between transaction 264 and 263
+Transaction 263: writing withdraw Account 4 with the new balance: 5
+Transaction 263: writing deposit Account 2 with the new balance: 26
+Transaction Started 263, Ended 265
+Aborting Transaction 264
+Transaction 266: Reading withdraw Account 9 with the balance: 19
+Transaction 267 initialized
+Transaction 266: Reading deposit Account 5 with the balance: 14
+Transaction 267: Reading withdraw Account 3 with the balance: 33
+Transaction 267: Reading deposit Account 5 with the balance: 17
+Transaction 268 initialized
+Conflict found between transaction 267 and 266
+Aborting Transaction 267
+Transaction 266: writing withdraw Account 9 with the new balance: 16
+Transaction 269: Reading withdraw Account 7 with the balance: 5
+Transaction 269: Reading deposit Account 3 with the balance: 33
+Transaction 270 initialized
+Transaction 269: writing withdraw Account 7 with the new balance: 4
+Transaction 269: writing deposit Account 3 with the new balance: 34
+Transaction Started 269, Ended 270
+Transaction 266: writing deposit Account 5 with the new balance: 17
+Transaction 271: Reading withdraw Account 3 with the balance: 34
+Transaction 272 initialized
+Transaction 271: Reading deposit Account 9 with the balance: 16
+Transaction Started 266, Ended 268
+Transaction 271: writing withdraw Account 3 with the new balance: 32
+Transaction 272: Reading withdraw Account 1 with the balance: 9
+Transaction 273 initialized
+Transaction 272: Reading deposit Account 7 with the balance: 4
+Transaction 271: writing deposit Account 9 with the new balance: 18
+Transaction 272: writing withdraw Account 1 with the new balance: 7
+Transaction 272: writing deposit Account 7 with the new balance: 6
+Transaction Started 272, Ended 275
+Transaction 274: Reading withdraw Account 6 with the balance: 2
+Transaction 275 initialized
+Transaction 274: Reading deposit Account 2 with the balance: 26
+Transaction Started 271, Ended 273
+Transaction 274: writing withdraw Account 6 with the new balance: -2
+Transaction 276: Reading withdraw Account 2 with the balance: 26
+Transaction 277 initialized
+Transaction 276: Reading deposit Account 4 with the balance: 5
+Transaction 274: writing deposit Account 2 with the new balance: 30
+Transaction Started 274, Ended 277
+Conflict found between transaction 276 and 274
+Transaction 278: Reading withdraw Account 2 with the balance: 30
+Transaction 279 initialized
+Transaction 278: Reading deposit Account 5 with the balance: 17
+Aborting Transaction 276
+Transaction 278: writing withdraw Account 2 with the new balance: 29
+Transaction 278: writing deposit Account 5 with the new balance: 18
+Transaction 279: Reading withdraw Account 1 with the balance: 7
+Transaction 279: Reading deposit Account 4 with the balance: 5
+Transaction 280 initialized
+Transaction 279: writing withdraw Account 1 with the new balance: 5
+Transaction 279: writing deposit Account 4 with the new balance: 7
+Transaction Started 278, Ended 280
+Transaction Started 279, Ended 281
+Transaction 282: Reading withdraw Account 3 with the balance: 32
+Transaction 283 initialized
+Transaction 282: Reading deposit Account 5 with the balance: 18
+Transaction 283: Reading withdraw Account 1 with the balance: 5
+Transaction 284 initialized
+Transaction 283: Reading deposit Account 4 with the balance: 7
+Transaction 282: writing withdraw Account 3 with the new balance: 30
+Transaction 282: writing deposit Account 5 with the new balance: 20
+Transaction Started 282, Ended 284
+Transaction 283: writing withdraw Account 1 with the new balance: 2
+Transaction 283: writing deposit Account 4 with the new balance: 10
+Transaction 285: Reading withdraw Account 1 with the balance: 5
+Transaction 286 initialized
+Transaction 285: Reading deposit Account 9 with the balance: 18
+Transaction Started 283, Ended 286
+Conflict found between transaction 285 and 283
+Transaction 287: Reading withdraw Account 2 with the balance: 29
+Aborting Transaction 285
+Transaction 287: Reading deposit Account 4 with the balance: 10
+Transaction 287: writing withdraw Account 2 with the new balance: 25
+Transaction 287: writing deposit Account 4 with the new balance: 14
+Transaction Started 287, Ended 288
+After Transaction 287
+Transaction 289 initialized
+The Total sum of balances is: $100
+Transaction 289: Reading withdraw Account 1 with the balance: 2
+Transaction 289: Reading deposit Account 9 with the balance: 18
+Transaction 289: writing withdraw Account 1 with the new balance: 1
+Transaction 289: writing deposit Account 9 with the new balance: 19
+Transaction Started 289, Ended 290
+After Transaction 289
+The Total sum of balances is: $100
+ID: 0, Account Balance: -24
+ID: 1, Account Balance: 1
+ID: 2, Account Balance: 25
+ID: 3, Account Balance: 30
+ID: 4, Account Balance: 14
+ID: 5, Account Balance: 20
+ID: 6, Account Balance: -2
+ID: 7, Account Balance: 6
+ID: 8, Account Balance: 11
+ID: 9, Account Balance: 19
+The Total sum of balances is: $100

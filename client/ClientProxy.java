@@ -1,34 +1,55 @@
 package client;
 
+import java.util.*;
 import java.lang.Thread;
 import java.lang.Math;
 import java.net.Socket;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.IOException;
+import java.io.FileWriter;
 
 import message.Message;
 import message.MessageTypes;
 import client.Client;
+import utils.ColoredPrint;
 
-public class ClientProxy extends Thread{
-
+/**
+ * Class [ClientProxy] is a thread that is called by Client class. The thread
+ * will create a random transaction and send it to the server and will listen for
+ * a reponse from the server. If the server replies with a commit success message
+ * the thread will shutdown. If the server replies with an abort message
+ * the thread will restart.
+ *
+ * @author Zachary M. Hallemeyer
+ */
+public class ClientProxy extends Thread
+{
   int portToListenOn;
   int serverPort;
   String serverIP;
   Message transaction;
 
-  public ClientProxy(int portToListenOn, int serverPort, String serverIP) {
+  // Constructor
+  public ClientProxy(int portToListenOn, int serverPort, String serverIP,
+                     Message transaction)
+  {
     this.portToListenOn = portToListenOn;
     this.serverPort = serverPort;
     this.serverIP = serverIP;
-    transaction = createRandomTransaction();
+    this.transaction = transaction;
   }
 
-  public void run() {
-    System.out.println("Running client proxy");
+  // This function connects to server and sends a random transaction.
+  // It will then wait for a response.
+  // If the server replies with a commit success message, the thread will shutdown.
+  // If the server replies with an abort message, the thread will restart.
+  public void run()
+  {
+    ColoredPrint.print("Running client proxy", ColoredPrint.PURPLE, Client.clientOutputFile);
 
-    try {
+    try
+    {
       // Connect to server
       Socket serverConnection = new Socket(serverIP, serverPort);
       ObjectOutputStream outputStream = new ObjectOutputStream(
@@ -36,77 +57,64 @@ public class ClientProxy extends Thread{
 
       // Send Transaction to server
       sendTransactionToServer(outputStream);
-      // sendTransactionToServer(outputStream);
 
       // Open input stream
       ObjectInputStream inputStream = new ObjectInputStream(
                                           serverConnection.getInputStream());
       // // Listen for response from server
-      try {
+      try
+      {
         Message newMessage = (Message) inputStream.readObject();
-
-        // sendTransactionToServer(outputStream);
         parseMessage(newMessage, outputStream);
       }
-      catch(Exception error) {
-
+      catch(Exception error)
+      {
+        ColoredPrint.print("Error in recieving transaction message from server: " + error, ColoredPrint.RED, Client.clientOutputFile);
       }
 
     }
-    catch(IOException error) {
-      // TODO
+    catch(IOException error)
+    {
+      ColoredPrint.print("Error in connecting to server: " + error, ColoredPrint.RED, Client.clientOutputFile);
     }
-
-    System.out.println("Thread ending");
   }
 
-  private void parseMessage(Message message, ObjectOutputStream outputStream) {
-    if(message.getType() == MessageTypes.TRANSACTION_FAIL) {
-      System.out.println("Transaction has been aborted...Restarting");
+  // Parses message from server.
+  // If the server replies with a commit success message, the thread will shutdown.
+  // If the server replies with an abort message, the thread will restart.
+  private void parseMessage(Message message, ObjectOutputStream outputStream)
+  {
+    // Check if abort
+    if(message.getType() == MessageTypes.TRANSACTION_FAIL)
+    {
+      ColoredPrint.print(message.getContent() + " Transaction has been aborted...Restarting", ColoredPrint.RED, Client.clientOutputFile);
+      // Restart thread
       this.run();
     }
-    if(message.getType() == MessageTypes.TRANSACTION_COMMIT) {
-      System.out.println("Transction commited!!!");
+    // Check if success
+    if(message.getType() == MessageTypes.TRANSACTION_COMMIT)
+    {
+      ColoredPrint.print(message.getContent() + " Transction commited!!!", ColoredPrint.GREEN, Client.clientOutputFile);
+      // When finished call clientProxyFinished in Client
+      Client.clientProxyFinished();
     }
   }
 
-  private void sendTransactionToServer(ObjectOutputStream outputStream) {
-    try {
+  // This function sends transaction Message to server
+  private void sendTransactionToServer(ObjectOutputStream outputStream)
+  {
+    try
+    {
       // Send Transaction to server
-      System.out.println("Sending transction to server: " + transaction.getContent());
+      ColoredPrint.print("Sending transction to server: " + transaction.getContent(), ColoredPrint.PURPLE, Client.clientOutputFile);
+      while(!Client.startSendingTransactions);
       outputStream.writeObject(transaction);
       outputStream.flush();
     }
-    catch (Exception error) {}
-  }
-
-  private Message createRandomTransaction() {
-    // Make these min and max configurable in config file
-    int minAmountToMove = 10;
-    int maxAmountToMove = 50;
-
-    int withdrawIndex;
-    int depositIndex;
-
-    do
+    catch (Exception error)
     {
-      withdrawIndex = getRandomInt(0, Client.accounts.length);
-      depositIndex = getRandomInt(0, Client.accounts.length);
+      ColoredPrint.print("Error in sending transaction to server: " + error, ColoredPrint.RED, Client.clientOutputFile);
     }
-    while(withdrawIndex == depositIndex);
-
-    String withdrawKey =  Client.accounts[withdrawIndex];
-    String depositKey  = Client.accounts[depositIndex];
-
-    int amountToMove  = getRandomInt(minAmountToMove, maxAmountToMove);
-
-    return new Message(MessageTypes.TRANSACTION, withdrawKey + ","
-                                                 + depositKey + ","
-                                                 + String.valueOf(amountToMove));
-  }
-
-  private int getRandomInt(int min, int max) {
-    return min + (int)(Math.random() * (max - min));
   }
 
 }

@@ -6,5 +6,6 @@ public interface MessageTypes {
     public static final int TRANSACTION         = 2;
     public static final int TRANSACTION_FAIL    = 3;
     public static final int TRANSACTION_COMMIT  = 4;
+    public static final int PRINT_ACCOUNTS  = 4;
 
 }

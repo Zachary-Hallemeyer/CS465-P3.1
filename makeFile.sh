@@ -1,6 +1,7 @@
 #!/bin/bash
 
-javac server/Account.java \
+javac utils/ColoredPrint.java \
+server/Account.java \
 message/MessageTypes.java \
 message/Message.java \
 utils/NetworkUtilities.java \

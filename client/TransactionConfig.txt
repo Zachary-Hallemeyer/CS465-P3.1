@@ -1,0 +1,3 @@
+numOfTransactions = 20
+minAmountToMove = 1
+maxAmountToMove = 5

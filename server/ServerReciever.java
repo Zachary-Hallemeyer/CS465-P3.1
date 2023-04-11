@@ -10,52 +10,68 @@ import server.Account;
 import server.Server;
 import message.Message;
 import message.MessageTypes;
+import utils.ColoredPrint;
 
 
 /**
- * Class [ServerThread] accepts data some client associated with the instance of
- * this class and sends the data to all current clients
+ * Class [ServerThread] accepts messages from clients.
+ * The accepted requests are either a request for a list of existing clients
+ * or a transaction message.
  *
  * @author Zachary M. Hallemeyer
  */
-public class ServerReciever extends Thread {
+public class ServerReciever extends Thread
+{
 
   Socket socket;
 
-  public ServerReciever(Socket socket) {
+  public ServerReciever(Socket socket)
+  {
     this.socket = socket;
   }
 
-  // This function accepts data from client and sends the data to all clients
-  public void run() {
-    System.out.println("Server reciever started");
-    try {
+  // This function accepts a Message from a client and parse the message with
+  // the function parseMessage
+  public void run()
+  {
+    try
+    {
       // Create a new input stream for client
       ObjectInputStream inputStream = new ObjectInputStream(
                                             socket.getInputStream());
 
       // Get message from input stream
-      try {
+      try
+      {
 
         Message newMessage = (Message) inputStream.readObject();
         // Parse and process message
         parseMessage(newMessage);
 
       }
-      catch (Exception error){
-        System.out.println("Data from client could not be converted to message object: " + error);
+      catch (Exception error)
+      {
+        ColoredPrint.print("Data from client could not be converted to message object: " + error, ColoredPrint.RED, Server.serverOutputFile);
       }
 
     }
-    catch(Exception error) {
-      System.out.println("Could not process message from peer: " + error);
+    catch(Exception error)
+    {
+      ColoredPrint.print("Could not process message from peer: " + error, ColoredPrint.RED, Server.serverOutputFile);
     }
   }
 
-  private void parseMessage(Message message) {
-    System.out.println("Parsing Message");
+  // The function parses Messages from Clients
+  // If the message is a request for a list of existing accounts:
+  //  A list of accounts is sent to the client
+  // If the message is a transaction:
+  //  The transaction is parsed and will be processed with the use of
+  //  the class TransactionManager (if the transaction is valid)
+  private void parseMessage(Message message)
+  {
     // Check if client is requesting account list
-    if(message.getType() == MessageTypes.ACCOUNTS_REQUEST) {
+    if(message.getType() == MessageTypes.ACCOUNTS_REQUEST)
+    {
       Message accountListMessage = new Message(MessageTypes.ACCOUNTS_REQUEST,
                                                Server.accounts.keySet()
                                                .toArray(String[]::new));
@@ -64,7 +80,8 @@ public class ServerReciever extends Thread {
 
     // Check if client is requesting a transaction
     if(message.getType() == Message.TRANSACTION
-        && isValidTransactionMessage(message)) {
+        && isValidTransactionMessage(message))
+    {
       // TODO: Put this code into a function with validation check
       String[] messageArray = message.getContent().toString().split(",");
       String accountWithdrawKey = messageArray[0];
@@ -78,35 +95,48 @@ public class ServerReciever extends Thread {
                                     this
                                     );
     }
+    if(message.getType() == MessageTypes.PRINT_ACCOUNTS)
+    {
+      AccountManager.printAccounts(Server.accounts, true);
+    }
   }
 
-  public void sendMessageToClient(Message message) {
-    System.out.println("Sending message to client");
-    try {
-
+  // Sends the Message provided by parameter to the assoicated client
+  public void sendMessageToClient(Message message)
+  {
+    try
+    {
+      // Send message to client
       ObjectOutputStream outputStream = new ObjectOutputStream(
                                               socket.getOutputStream());
       outputStream.writeObject(message);
       outputStream.flush();
-
     }
-    catch (Exception error){
-      // TODO
-      System.out.println("Uh oh stinky: " + error);
+    catch (Exception error)
+    {
+      ColoredPrint.print("Message to client failed: " + error, ColoredPrint.RED, Server.serverOutputFile);
     }
   }
 
-  public void closeSocket() {
-    System.out.println("Closing Socket");
+  // Closes this class' socket
+  public void closeSocket()
+  {
     // Close socket and input stream
-    try {
+    try
+    {
       socket.close();
     }
-    catch (Exception error) {}
+    catch (Exception error)
+    {
+      ColoredPrint.print("Error in closing socket: " + error, ColoredPrint.RED, Server.serverOutputFile);
+    }
   }
 
+  // Returns true if the transaction is valid
+  // Returns false otherwise
   // Message should be in the following form: <string>,<string>,<integer>
-  private boolean isValidTransactionMessage(Message message) {
+  private boolean isValidTransactionMessage(Message message)
+  {
       String[] messageArray = message.getContent().toString().split(",");
       int desiredStringCount = 3;
       int withdrawKeyIndex = 0;
@@ -115,29 +145,42 @@ public class ServerReciever extends Thread {
       int amountToMove = 0;
 
       // Check if correct string count
-      if(messageArray.length != desiredStringCount) {
+      if(messageArray.length != desiredStringCount)
+      {
         return false;
       }
 
       // Check if withdraw and deposit accounts exist in system
-
+      if(   !isAccountInSystem(messageArray[withdrawKeyIndex])
+         && !isAccountInSystem(messageArray[depositKeyIndex]))
+      {
+        return false;
+      }
 
       // Check if 'amountToMove' is a number
-      try {
+      try
+      {
         amountToMove = Integer.parseInt(messageArray[amountToMoveIndex]);
       }
       // 'amountToMove' is not a number
-      catch (Exception error){
+      catch (Exception error)
+      {
+        ColoredPrint.print("Transaction is not in valid form: " + error, ColoredPrint.RED, Server.serverOutputFile);
         return false;
       }
 
       return true;
   }
 
-  private boolean isAccountInSystem(String accountID) {
+  // Returns true if the accountID is in the system
+  // Returns false otherwise
+  private boolean isAccountInSystem(String accountID)
+  {
 
-    for(String accountKey : Server.accounts.keySet()) {
-      if(accountID.equals(accountKey)) {
+    for(String accountKey : Server.accounts.keySet())
+    {
+      if(accountID.equals(accountKey))
+      {
         return true;
       }
     }

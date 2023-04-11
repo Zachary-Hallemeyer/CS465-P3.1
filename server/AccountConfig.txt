@@ -1,0 +1,2 @@
+numOfAccounts = 10
+defaultBalance = 10

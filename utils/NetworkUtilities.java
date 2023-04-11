@@ -10,7 +10,8 @@ import java.util.Enumeration;
 /**
  * Utility class for networking.
  */
-public class NetworkUtilities {
+public class NetworkUtilities
+{
 
     /**
      * Helper class to retrieve ones own IPv4.
